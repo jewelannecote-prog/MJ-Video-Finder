@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MJ Video Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Jackson Video Finder</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Michael Jackson Video Finder</h1>
-  <p>Finding amazing Michael Jackson videos for your fan page!</p>
+
+  <h1>🎤 Michael Jackson Video Finder</h1>
+
+  <p>Find interesting, funny, emotional and amazing Michael Jackson videos.</p>
+
+  <select id="category">
+    <option value="all">All Videos</option>
+    <option value="emotional">Emotional Moments</option>
+    <option value="funny">Funny Moments</option>
+    <option value="live">Live Performances</option>
+    <option value="interviews">Interviews</option>
+  </select>
+
+  <button onclick="findVideos()">Find Videos</button>
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
